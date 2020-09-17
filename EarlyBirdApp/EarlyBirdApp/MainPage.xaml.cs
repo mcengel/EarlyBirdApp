@@ -36,6 +36,21 @@ namespace EarlyBirdApp
                 Console.WriteLine(errorMsg.Message);
             }
         }
+
+        public void OnStartButtonClicked(object sender, EventArgs args)
+        {
+
+        }
+
+        public void OnSettingsButtonClicked(object sender, EventArgs args)
+        {
+
+        }
+
+        public void OnStatisticsButtonClicked(object sender, EventArgs args)
+        {
+
+        }
     }
 
 }
