@@ -1,6 +1,8 @@
-﻿using System;
+﻿using EarlyBirdApp.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,8 +54,7 @@ namespace EarlyBirdApp.Views
             else
             {
                 this.IsRandomGamemode = false;
-            }
-            Console.WriteLine("IsRandom:" + this.IsRandomGamemode);
+            }           
         }
 
 

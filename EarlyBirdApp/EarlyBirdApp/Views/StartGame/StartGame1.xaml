@@ -8,7 +8,7 @@
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="Start Page 1" />
-        <Stepper x:Name="stepper" Value="{Binding NumParticipants}" Minimum="0" Maximum="10" Increment="1" ValueChanged="OnNumParticipantsValueChanged" />
+        <Stepper x:Name="stepper" Minimum="0" Maximum="10" Increment="1" ValueChanged="OnNumParticipantsValueChanged" />
         <Label Text="0" x:Name="_numParticipantsLabel" FontSize="Large" FontAttributes="Bold" />
         
         <Button Text="Go to page 2" Clicked="GoToNextPage" />

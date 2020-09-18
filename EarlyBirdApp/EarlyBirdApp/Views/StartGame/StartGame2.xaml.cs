@@ -17,10 +17,7 @@ namespace EarlyBirdApp.Views
         public StartGame2(int NumberParticipants, bool IsRandomGamemode)
         {
             this.IsRandomGamemode = IsRandomGamemode;
-            this.NumberParticipants = NumberParticipants;
-            Console.WriteLine("IsRandom: " + IsRandomGamemode + ". NumberParticipants: " + NumberParticipants);
-            _numberLabel.Text = this.NumberParticipants.ToString();
-            _isRandomLabel.Text = ConvertBoolToString(this.IsRandomGamemode);
+            this.NumberParticipants = NumberParticipants;         
             InitializeComponent();
         }
         protected async void GoToNextPage(object sender, EventArgs e)
