@@ -17,40 +17,62 @@ namespace EarlyBirdApp
             InitializeComponent();
             
         }
-
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            try
-            {
-                Console.WriteLine("&&&&&"+ Path.GetFullPath(Environment.CurrentDirectory));
-                File.Create(Path.GetFullPath(Environment.CurrentDirectory));
-                string path = Path.Combine(Path.GetTempPath(), @"persitence", "TextFile1.txt");
-                Console.WriteLine("$$$$$" + Environment.CurrentDirectory);
-                Console.WriteLine("§§§§§" + path);
-                string[] file = System.IO.File.ReadAllLines(path);
-                Console.WriteLine("?????" + file[0]);
-
-            }catch(Exception errorMsg)
-            {
-                Console.WriteLine(errorMsg.Message);
-            }
-        }
-
-        public void OnStartButtonClicked(object sender, EventArgs args)
+        private void StartButtonClicked(object sender, EventArgs e)
         {
 
         }
 
-        public void OnSettingsButtonClicked(object sender, EventArgs args)
+        private void GameSettingsButtonClicked(object sender, EventArgs e)
         {
 
         }
 
-        public void OnStatisticsButtonClicked(object sender, EventArgs args)
+        private void EditorButtonClicked(object sender, EventArgs e)
         {
 
         }
+
+        private void ExitGameButtonClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SettingsButtonClicked(object sender, EventArgs e)
+        {
+
+        }
+        //private void Button_Clicked(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        Console.WriteLine("&&&&&"+ Path.GetFullPath(Environment.CurrentDirectory));
+        //        File.Create(Path.GetFullPath(Environment.CurrentDirectory));
+        //        string path = Path.Combine(Path.GetTempPath(), @"persitence", "TextFile1.txt");
+        //        Console.WriteLine("$$$$$" + Environment.CurrentDirectory);
+        //        Console.WriteLine("§§§§§" + path);
+        //        string[] file = System.IO.File.ReadAllLines(path);
+        //        Console.WriteLine("?????" + file[0]);
+
+        //    }catch(Exception errorMsg)
+        //    {
+        //        Console.WriteLine(errorMsg.Message);
+        //    }
+        //}
+
+        //public void OnStartButtonClicked(object sender, EventArgs args)
+        //{
+
+        //}
+
+        //public void OnSettingsButtonClicked(object sender, EventArgs args)
+        //{
+
+        //}
+
+        //public void OnStatisticsButtonClicked(object sender, EventArgs args)
+        //{
+
+        //}
     }
 
 }

@@ -4,21 +4,28 @@
              x:Class="EarlyBirdApp.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Button Text="Start Game"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="OnStartButtonClicked" />
-        <Button Text="View Statistics"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="OnStatisticsButtonClicked" />
-        <Button Text="Settings"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="OnSettingsButtonClicked" />
+        <Label Text="Beat the butcher" FontSize="Title" FontAttributes="Italic" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" Margin="0,40,0,0"/>
+        <Button Text="Start game" Clicked="StartButtonClicked" VerticalOptions="Center" Margin="0,40,0,0"/>
+        <Grid Margin="20,20,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Text="Players:"/>
+            <Label Grid.Column="1" Text="0" />
+            <Label Grid.Column="2"  Text="Gamemode:" />
+            <Label Grid.Column="3" Text="Random" />
+        </Grid>
+        <Button Text="Game settings" Clicked="GameSettingsButtonClicked" VerticalOptions="Center" Margin="0,0,0,40"/>
+        <Button Text="Editor" Clicked="EditorButtonClicked" VerticalOptions="Center"/>
+        <Button Text="Exit game" Clicked="ExitGameButtonClicked" VerticalOptions="Center"/>
+        <Button Text="Settings" Clicked="SettingsButtonClicked" VerticalOptions="Center"/>
+        <Image Source="Logo" />
     </StackLayout>
 
 </ContentPage>

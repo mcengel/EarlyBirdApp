@@ -1,11 +1,4 @@
-﻿using EarlyBirdApp.DataAccess;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -23,14 +16,14 @@ namespace EarlyBirdApp.Views
         }
         protected async void GoToNextPage(object sender, EventArgs e)
         {
-            if(this.CheckEntries())
+            if (this.CheckEntries())
             {
-                await Navigation.PushAsync(new StartGame2(this.NumParticipants,this.IsRandomGamemode));
-            }            
+                await Navigation.PushAsync(new StartGame2(this.NumParticipants, this.IsRandomGamemode));
+            }
         }
         private bool CheckEntries()
         {
-            if(this.NumParticipants == 0)
+            if (this.NumParticipants == 0)
             {
                 return false;
             }
@@ -47,14 +40,14 @@ namespace EarlyBirdApp.Views
         private void OnGameModeRadioButtonCheckedChanged(object sender, CheckedChangedEventArgs e)
         {
             string gamemode = e.Value.ToString();
-            if(gamemode.Equals("Random"))
+            if (gamemode.Equals("Random"))
             {
                 this.IsRandomGamemode = true;
-            } 
+            }
             else
             {
                 this.IsRandomGamemode = false;
-            }           
+            }
         }
 
 
