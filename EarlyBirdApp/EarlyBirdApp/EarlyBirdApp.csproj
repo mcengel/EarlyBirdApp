@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Views\StartGame\StartGame1.xaml.cs">
       <DependentUpon>StartGame1.xaml</DependentUpon>
     </Compile>
