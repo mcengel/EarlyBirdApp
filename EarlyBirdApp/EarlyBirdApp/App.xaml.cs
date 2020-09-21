@@ -27,8 +27,8 @@ namespace EarlyBirdApp
         {
             InitializeComponent();
             Device.SetFlags(new string[] { "RadioButton_Experimental" });
-            MainPage = new NavigationPage(new AddPlayers());
-        }
+            MainPage = new MainPage();//new NavigationPage(new AddPlayers());
+        }//https://www.youtube.com/watch?v=UPD_2SVGQ6M
 
         protected override void OnStart()
         {
