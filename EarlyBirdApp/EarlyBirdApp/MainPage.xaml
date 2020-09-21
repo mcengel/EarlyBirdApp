@@ -5,7 +5,7 @@
 
     <StackLayout>
         <Label Text="Beat the butcher" FontSize="Title" FontAttributes="Italic" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" Margin="0,40,0,0"/>
-        <Button Text="Start game" Clicked="StartButtonClicked" VerticalOptions="Center" Margin="0,40,0,0"/>
+        <Button Text="Start game" Clicked="StartButtonClickedAsync" VerticalOptions="Center" Margin="0,40,0,0"/>
         <Grid Margin="20,20,20,20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />

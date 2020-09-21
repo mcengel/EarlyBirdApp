@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EarlyBirdApp.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -17,9 +18,9 @@ namespace EarlyBirdApp
             InitializeComponent();
             
         }
-        private void StartButtonClicked(object sender, EventArgs e)
+        private async void StartButtonClickedAsync(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new StartGame1());
         }
 
         private void GameSettingsButtonClicked(object sender, EventArgs e)

@@ -37,7 +37,7 @@ namespace EarlyBirdApp.Views.AddContent
                 });
 
                 nameEntry.Text = ageEntry.Text = string.Empty;
-                listView.ItemsSource = await App.Database.GetPlayersAsync();
+                listView.ItemsSource = await GenericQuery.GetDataAsync();
             }
         }
     }
