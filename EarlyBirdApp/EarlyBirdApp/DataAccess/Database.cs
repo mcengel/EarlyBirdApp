@@ -13,15 +13,9 @@ namespace EarlyBirdApp.DataAccess
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<Player>().Wait();
         }
-
-        public Task<List<Player>> GetPlayersAsync()
+        public SQLiteAsyncConnection GetSQLiteConnection()
         {
-            return _database.Table<Player>().ToListAsync();
-        }
-
-        public Task<int> SavePlayersAsync(Player person)
-        {
-            return _database.InsertAsync(person);
+            return this._database;
         }
     }
 }
